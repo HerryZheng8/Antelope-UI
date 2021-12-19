@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Topnav/>
+    <Topnav />
     <div class="banner">
-      <h1>羚羊UI</h1>
+      <h1>轱辘UI</h1>
       <h2>一个厉害的 UI 框架</h2>
       <p class="actions">
         <a href="https://github.com">GitHub</a>
@@ -11,6 +11,12 @@
     </div>
   </div>
 </template>
+<script lang="ts">
+import Topnav from "../components/Topnav.vue";
+export default {
+  components: { Topnav },
+};
+</script>
 <style lang="scss" scoped>
 .banner {
   padding: 100px 0;
@@ -34,9 +40,3 @@
   }
 }
 </style>
-<script lang="ts">
-import Topnav from "../components/Topnav.vue";
-export default {
-  components: {Topnav}
-}
-</script>
