@@ -3,7 +3,15 @@
     <p>dialog 的文档</p>
     <h1>示例1</h1>
     <Button @click="toggle">toggle</Button>
-    <Dialog v-model:visible="x" :close-on-click-overlay="true" :ok="f1" :cancel="f2"></Dialog>
+    <Dialog v-model:visible="x" :close-on-click-overlay="true" :ok="f1" :cancel="f2">
+      <template v-slot:content>
+        <strong>你好</strong>
+        <div>Hi</div>
+      </template>
+      <template v-slot:title>
+        <strong>加粗的标题</strong>
+      </template>
+    </Dialog>
   </div>
 </template>
 
@@ -23,12 +31,12 @@ export default {
     };
     const f1 = () => {
       console.log("1");
-      return true
+      return true;
     };
     const f2 = () => {
       console.log("2");
     };
-    return {x, toggle,f1,f2};
+    return {x, toggle, f1, f2};
   }
 };
 </script>
