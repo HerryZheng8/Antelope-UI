@@ -1,18 +1,17 @@
 <template>
   <div class="topnav">
-    <router-link  to="/" class="logo">
+    <router-link to="/" class="logo">
       <svg class="icon">
-        <use xlink:href="#icon-list"></use>
+        <use xlink:href="#icon-antelope"></use>
       </svg>
     </router-link>
     <ul class="menu">
       <li>
-        <router-link to="/doc">菜单1</router-link>
+        <router-link to="/doc">文档</router-link>
       </li>
-      <li>菜单2</li>
     </ul>
     <svg v-if="toggleMenuButtonVisible"
-        class="toggleAside" @click="toggleMenu">
+         class="toggleAside" @click="toggleMenu">
       <use xlink:href="#icon-list"></use>
     </svg>
   </div>
@@ -47,7 +46,6 @@ $color: #28d1c9;
 }
 
 .topnav {
-  color: $color;
   display: flex;
   padding: 16px;
   position: fixed;
@@ -57,6 +55,7 @@ $color: #28d1c9;
   z-index: 10;
   justify-content: center;
   align-items: center;
+  color: $color;
 
   > .logo {
     max-width: 6em;
@@ -79,8 +78,8 @@ $color: #28d1c9;
   }
 
   > .toggleAside {
-    width: 24px;
-    height: 24px;
+    width: 26px;
+    height: 26px;
     position: absolute;
     left: 16px;
     top: 50%;
@@ -97,6 +96,7 @@ $color: #28d1c9;
     }
     > .toggleAside {
       display: inline-block;
+      color: #1890ff;
     }
   }
 }

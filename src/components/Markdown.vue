@@ -21,3 +21,9 @@ export default {
   }
 };
 </script>
+<style lang="scss" scoped>
+.markdown-body{
+  color: #1d2c40;
+  background-color: transparent;
+  }
+</style>
