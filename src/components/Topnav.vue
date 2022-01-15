@@ -12,7 +12,7 @@
     </ul>
     <svg v-if="toggleMenuButtonVisible"
          class="toggleAside" @click="toggleMenu">
-      <use xlink:href="#icon-list"></use>
+      <use xlink:href="#icon-list-copy"></use>
     </svg>
   </div>
 </template>
@@ -36,7 +36,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$color: #28d1c9;
+$color: white;
 .icon {
   width: 1em;
   height: 1em;
@@ -71,7 +71,6 @@ $color: #28d1c9;
     display: flex;
     white-space: nowrap;
     flex-wrap: nowrap;
-
     > li {
       margin: 0 1em;
     }

@@ -6,8 +6,8 @@
         <h1>小羚羊UI</h1>
         <h2>一个简洁好看的 UI 框架</h2>
         <p class="actions">
-          <a href="https://github.com">GitHub</a>
-          <router-link to="/doc/get-started">Start</router-link>
+          <a class="home-button" href="https://github.com">GitHub</a>
+          <router-link class="home-button" to="/doc/get-started">Start</router-link>
         </p>
       </div>
     </div>
@@ -18,7 +18,7 @@
             <use xlink:href="#icon-Vue"></use>
           </svg>
           <h3>基于 Vue 3</h3>
-          <p>骄傲地使用了 Vue 3 Composition API</p>
+          <p>使用 Vue 3 Composition API 构建</p>
         </li>
         <li>
           <svg>
@@ -45,12 +45,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$green:#00aca1;
+$green:orange;
 $border-radius:8px;
-$color:#28d1c9;
+$color:orange;
 .topnavAndBanner{
   clip-path: ellipse(80% 60% at 50% 40%);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(134,243,241,1) 50%, rgba(13,230,227,0.7063200280112045) 100%);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(246,195,172,1) 50%, rgba(255,138,78,0.8407738095238095) 100%);
 }
 .features{
   margin: 64px auto;
@@ -102,6 +102,9 @@ $color:#28d1c9;
   }
   > .actions{
     padding: 8px 0;
+    > .home-button{
+      box-shadow: 1px 2px 1px rgba(0,0,0,0.4);
+    }
     a {
       margin:0 8px;
       background: $green;

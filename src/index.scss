@@ -14,7 +14,7 @@ a {
   color: inherit;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     cursor: pointer;
   }
 }
@@ -49,6 +49,6 @@ body {
   fill: currentColor;
   overflow: hidden;
 }
-//.markdown-body pre{
-//  color: rgb(245,242,240);
-//}
+#markdown-body pre{
+  background-color: rgb(245,242,240);
+}
