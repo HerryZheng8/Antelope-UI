@@ -1,5 +1,5 @@
 <template>
-  <button class="gulu-switch" @click="toggle" :class="{'gulu-checked':value}">
+  <button class="antelope-switch" @click="toggle" :class="{'antelope-checked':value}">
     <span></span>
   </button>
 </template>
@@ -20,19 +20,19 @@ export default {
 <style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
-.gulu-switch {
+.antelope-switch {
   height: $h; width: $h * 2; border: none; background: #bfbfbf; border-radius: $h/2; position: relative;
   > span {
     position: absolute; top: 2px; left: 2px; height: $h2; width: $h2; background: white; border-radius: $h2 / 2; transition: all 250ms;
   }
-  &.gulu-checked { background: #1890ff;
+  &.antelope-checked { background: #1890ff;
     > span { left: calc(100% - #{$h2} - 2px); }
   }
   &:focus { outline: none; }
   &:active {
     > span { width: $h2 + 22px; }
   }
-  &.gulu-checked:active {
+  &.antelope-checked:active {
     > span { width: $h2 + 22px; margin-left: -22px; }
   }
 }
