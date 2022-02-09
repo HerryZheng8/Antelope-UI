@@ -3,13 +3,13 @@
 打开终端运行下列命令：
 
 ```
-npm install Antelope-ui
+npm install antelope-ui-1
 ```
 
 或
 
 ```
-yarn add Antelope-ui
+yarn add antelope-ui-1
 ```
 
 下一节：[开始使用](#/doc/get-started)
